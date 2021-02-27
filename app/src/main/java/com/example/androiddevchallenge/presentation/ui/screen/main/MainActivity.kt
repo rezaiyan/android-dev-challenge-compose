@@ -62,9 +62,9 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun goToDetails(puppy: Puppy){
-        startActivity(Intent(this,DetailsActivity::class.java).apply {
-            putExtra("puppy",puppy)
+    private fun goToDetails(puppy: Puppy) {
+        startActivity(Intent(this, DetailsActivity::class.java).apply {
+            putExtra("puppy", puppy)
         })
     }
 }
