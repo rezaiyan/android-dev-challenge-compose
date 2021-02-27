@@ -1,9 +1,24 @@
+/*
+ * Copyright 2021 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     https://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 package com.example.androiddevchallenge.presentation.ui.screen.details.view
 
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.aspectRatio
+import androidx.compose.foundation.layout.fillMaxHeight
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.ExtendedFloatingActionButton
 import androidx.compose.material.FloatingActionButtonDefaults
@@ -32,7 +47,8 @@ fun PuppyDetails(
         "3",
         "aaa",
         "https://s3.india.com/wp-content/uploads/2020/08/5170590074_714d36db83_b.jpg"
-    ), onAdoptClick: () -> Unit = {}
+    ),
+    onAdoptClick: () -> Unit = {}
 ) {
     Column {
         ConstraintLayout(
@@ -65,7 +81,8 @@ fun PuppyDetails(
                     .constrainAs(name) {
                         start.linkTo(parent.start)
                         top.linkTo(image.bottom)
-                    })
+                    }
+            )
 
             Text(
                 fontSize = 16.sp,
@@ -75,7 +92,8 @@ fun PuppyDetails(
                     .constrainAs(age) {
                         start.linkTo(parent.start)
                         top.linkTo(name.bottom)
-                    })
+                    }
+            )
 
             Text(
                 fontSize = 16.sp,
@@ -85,7 +103,8 @@ fun PuppyDetails(
                     .constrainAs(breed) {
                         start.linkTo(parent.start)
                         top.linkTo(age.bottom)
-                    })
+                    }
+            )
 
             ExtendedFloatingActionButton(
                 icon = { Icon(Icons.Filled.Favorite, "") },
@@ -101,7 +120,5 @@ fun PuppyDetails(
                     }
             )
         }
-
     }
-
 }
