@@ -6,10 +6,14 @@
 
 
 ## :scroll: Description
+The Pets project has two screens, Main and Details.
+There's a list of pets on the main screen and a Details screen that shows you the particulars of each pet.
 <!--- Describe your app in one or two sentences -->
 
 
 ## :bulb: Motivation and Context
+Getting to know more about android and new technologies is my biggest motivation.
+The intention of this project is to get more familiar with Jetpack Compose.
 <!--- Optionally point readers to interesting parts of your submission. -->
 <!--- What are you especially proud of? -->
 
